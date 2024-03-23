@@ -101,7 +101,6 @@ const Footer = () => {
                     alt={img}
                     priority
                     quality={100}
-                    className="w-auto h-auto"
                   />
                 </div>
               ))}
