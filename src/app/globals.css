@@ -2,32 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .horizontal {
+    @apply sm:px-14 px-4;
+  }
+
+  .btn-primary {
+    @apply px-4 py-[10px] min-h-10 bg-primary text-white font-semibold rounded-md;
+  }
+
+  .btn-primary-outlined {
+    @apply px-4 py-[10px] min-h-10 bg-white text-primary border-[1px] border-primary font-semibold rounded-md;
+  }
+
+  .btn-ghost {
+    @apply px-4 py-[10px] min-h-10 bg-transparent text-black font-semibold rounded-md;
+  }
+}
+
+/* Flickity */
+.flickity-prev-next-button {
+  background-color: white !important;
+  width: 48px !important;
+  height: 48px !important;
+  border-radius: 0 !important;
+}
+
+.flickity-prev-next-button.next {
+  right: 40px !important;
+}
+
+.flickity-prev-next-button.previous {
+  left: 40px !important;
+}
+
+/* icon color */
+.flickity-button-icon {
+  width: 15px !important;
+  height: 15px !important;
+  margin-top: 7px;
+  margin-left: 7px;
+}
+
+@media screen and (max-width: 640px) {
+  .flickity-prev-next-button {
+    display: none;
+  }
+
+  .flickity-button-icon {
+    display: none;
   }
 }
