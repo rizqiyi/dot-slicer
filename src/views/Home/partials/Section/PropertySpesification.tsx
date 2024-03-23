@@ -24,7 +24,7 @@ const PropertySpecification: React.FC<PropertySpecificationProps> = (
           <span className="text-[#808080] text-xs whitespace-nowrap">
             Dimensi Tanah
           </span>
-          <span className="text-xs">15 x 8m</span>
+          <span className="text-xs font-semibold">15 x 8m</span>
         </div>
         <div className="flex flex-col max-w-fit items-center justify-center text-center">
           <Image
@@ -38,7 +38,7 @@ const PropertySpecification: React.FC<PropertySpecificationProps> = (
           <span className="text-[#808080] text-xs whitespace-nowrap">
             Luas Bangunan
           </span>
-          <span className="text-xs">112m&sup2;</span>
+          <span className="text-xs font-semibold">112m&sup2;</span>
         </div>
         <div className="flex flex-col max-w-fit items-center justify-center text-center">
           <Image
@@ -50,7 +50,7 @@ const PropertySpecification: React.FC<PropertySpecificationProps> = (
             priority
           />
           <span className="text-[#808080] text-xs">Lantai</span>
-          <span className="text-xs">2</span>
+          <span className="text-xs font-semibold">2</span>
         </div>
         <div className="flex flex-col max-w-fit items-center justify-center text-center">
           <Image
@@ -64,7 +64,7 @@ const PropertySpecification: React.FC<PropertySpecificationProps> = (
           <span className="text-[#808080] text-xs whitespace-nowrap">
             Kamar Tidur
           </span>
-          <span className="text-xs">4</span>
+          <span className="text-xs font-semibold">4</span>
         </div>
       </div>
       <div className="py-4 flex flex-col">
