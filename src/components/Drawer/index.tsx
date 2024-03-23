@@ -42,23 +42,27 @@ const Index = () => {
             priority
           />
           <ul className="flex flex-col mt-8 items-start gap-8">
-            <li className="font-semibold hover:text-primary flex items-center gap-3 cursor-pointer">
+            <li className="font-semibold hover:text-primary hover:fill-primary flex items-center gap-3 cursor-pointer">
               <span>Tentang Kami</span>
-              <Image
-                src="/assets/icons/arrow-down-ic.svg"
-                width={10}
-                height={7}
-                alt="arrow-down"
-              />
+              <svg
+                width="10"
+                height="7"
+                viewBox="0 0 10 7"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M5 6.83463L0 1.83464L1.16667 0.667969L5 4.5013L8.83333 0.667969L10 1.83464L5 6.83463Z" />
+              </svg>
             </li>
-            <li className="font-semibold hover:text-primary flex items-center gap-3 cursor-pointer">
+            <li className="font-semibold hover:text-primary hover:fill-primary flex items-center gap-3 cursor-pointer">
               <span>Produk & Layanan</span>
-              <Image
-                src="/assets/icons/arrow-down-ic.svg"
-                width={10}
-                height={7}
-                alt="arrow-down"
-              />
+              <svg
+                width="10"
+                height="7"
+                viewBox="0 0 10 7"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M5 6.83463L0 1.83464L1.16667 0.667969L5 4.5013L8.83333 0.667969L10 1.83464L5 6.83463Z" />
+              </svg>
             </li>
             <li className="font-semibold hover:text-primary cursor-pointer">
               Blog

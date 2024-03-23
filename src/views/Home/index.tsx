@@ -3,7 +3,12 @@ import dynamic from "next/dynamic";
 import HomeView from "./partials/HomeView";
 import OtherDesign from "./partials/OtherDesign";
 import Footer from "./partials/Footer";
-const Carousel = dynamic(() => import("@/components/Carousel"), { ssr: false });
+const Carousel = dynamic(() => import("@/components/Carousel"), {
+  ssr: false,
+  loading() {
+    return <div className="horizontal">Loading...</div>;
+  },
+});
 
 const Index = () => {
   return (
